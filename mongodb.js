@@ -3,7 +3,6 @@
 const db = {};
 const url = process.env.MONGODB_CONNECTION_STRING;
 
-
 if (url) {
     const fs = require('fs');
     const path = require('path');
