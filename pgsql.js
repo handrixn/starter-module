@@ -8,7 +8,7 @@ const db = {};
 const basename = 'index.js';
 const url = process.env.DB_PGSQL_CONNECTION_STRING;
 const dirname = `${__dirname}/../../src/models/pgsql/`;
-const timezoneOffset = require('../../config/timezone.json');
+const timezoneOffset = require('./timezone.json');
 
 const config = {
     dialect: 'postgres',
