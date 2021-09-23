@@ -1,21 +1,22 @@
 'use strict';
 
-const fs = require('fs');
-const path = require('path');
-const mongoose = require('mongoose');
-
 const db = {};
-const basename = 'index.js';
 const url = process.env.MONGODB_CONNECTION_STRING;
-const dirname = `${__dirname}/../../src/model/mongo/`;
 
-const options = {
-    connectTimeoutMS: 30000,
-    useUnifiedTopology: true,
-    useNewUrlParser: true // remove DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version
-};
 
 if (url) {
+    const fs = require('fs');
+    const path = require('path');
+    const mongoose = require('mongoose');
+
+    const basename = 'index.js';
+    const dirname = `${__dirname}/../../src/model/mongo/`;
+    const options = {
+        connectTimeoutMS: 30000,
+        useUnifiedTopology: true,
+        useNewUrlParser: true // remove DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version
+    };
+
     mongoose.connect(url, options);
 
     mongoose.pluralize(null); // disable auto pluralize collection name eg: student to students
