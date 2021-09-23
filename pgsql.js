@@ -7,7 +7,7 @@ const Sequelize = require('sequelize');
 const db = {};
 const basename = 'index.js';
 const url = process.env.DB_PGSQL_CONNECTION_STRING;
-const dirname = `${__dirname}/../../src/models/pgsql/`;
+const dirname = `${__dirname}/../../src/model/pgsql/`;
 const timezoneOffset = require('./timezone.json');
 
 const config = {

@@ -7,7 +7,7 @@ const mongoose = require('mongoose');
 const db = {};
 const basename = 'index.js';
 const url = process.env.MONGODB_CONNECTION_STRING;
-const dirname = `${__dirname}/../../src/models/mongo/`;
+const dirname = `${__dirname}/../../src/model/mongo/`;
 
 const options = {
     connectTimeoutMS: 30000,
