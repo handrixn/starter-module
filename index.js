@@ -1,8 +1,8 @@
 'use strict';
 
-exports.Mysql = require('./database/mysql');
-exports.Pgsql = require('./database/pgsql');
-exports.Mongo =  require('./database/mongodb');
-exports.Redis = require('./database/redis');
+exports.Mysql = require('./mysql');
+exports.Pgsql = require('./pgsql');
+exports.Mongo =  require('./mongodb');
+exports.Redis = require('./redis');
 
 module.exports = exports;
